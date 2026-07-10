@@ -10,14 +10,21 @@
 <link rel="stylesheet" href="css/style.css">
 <style>
   .contact-grid { grid-template-columns: 0.85fr 1.15fr; }
+  .contact-graphic {
+    background-color: #0c0c0c;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    overflow: hidden;
+  }
+  .contact-graphic img {
+    width: 100%;
+    height: 100%;
+    object-fit: contain;
+  }
   @media (max-width: 860px) {
     .contact-grid { grid-template-columns: 1fr !important; }
-    .contact-graphic {
-      background-size: contain !important;
-      background-color: #0c0c0c;
-      min-height: 240px !important;
-      aspect-ratio: 1536 / 1024;
-    }
+    .contact-graphic { aspect-ratio: 1536 / 1024; }
   }
 </style>
 </head>
@@ -74,7 +81,9 @@
         </div>
       </div>
     </div>
-    <div class="contact-graphic" style="border-radius: 4px; min-height: 320px; background-image: url('images/contact-graphic.png'); background-size: cover; background-position: center;"></div>
+    <div class="contact-graphic" style="border-radius: 4px;">
+      <img src="images/contact-graphic.png" alt="Get in touch with Silver Wolf Stays">
+    </div>
   </div>
 </section>
 
