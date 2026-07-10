@@ -12,6 +12,14 @@
   @media (max-width: 640px) {
     .values-grid { grid-template-columns: 1fr 1fr !important; }
   }
+  @media (max-width: 860px) {
+    .about-graphic {
+      background-size: contain !important;
+      background-color: #0c0c0c;
+      min-height: 240px !important;
+      aspect-ratio: 1536 / 1024;
+    }
+  }
 </style>
 </head>
 <body>
@@ -118,7 +126,7 @@
 
 <section class="section-tight container" style="padding-bottom: 90px;">
   <div class="grid-2" style="align-items: stretch;">
-    <div style="border-radius: 4px; overflow: hidden; min-height: 320px; background-image: url('images/about-brand.png'); background-size: cover; background-position: center;"></div>
+    <div class="about-graphic" style="border-radius: 4px; overflow: hidden; min-height: 320px; background-image: url('images/about-brand.png'); background-size: cover; background-position: center;"></div>
     <div class="panel" style="padding: 44px 38px; display: flex; flex-direction: column; justify-content: center;">
       <h2 style="font-family: var(--font-serif); font-size: clamp(24px, 3vw, 28px); margin: 0 0 26px; font-weight: 600;">Why Owners Switch to <span class="gold">Silver Wolf Stays</span></h2>
       <div class="checklist" style="margin: 0;">

@@ -12,6 +12,12 @@
   .contact-grid { grid-template-columns: 0.85fr 1.15fr; }
   @media (max-width: 860px) {
     .contact-grid { grid-template-columns: 1fr !important; }
+    .contact-graphic {
+      background-size: contain !important;
+      background-color: #0c0c0c;
+      min-height: 240px !important;
+      aspect-ratio: 1536 / 1024;
+    }
   }
 </style>
 </head>
@@ -74,7 +80,7 @@
         <a href="#" class="footer-social" style="background: var(--bg); border-color: var(--border-social);">w</a>
       </div>
     </div>
-    <div style="border-radius: 4px; min-height: 320px; background-image: url('images/contact-graphic.png'); background-size: cover; background-position: center;"></div>
+    <div class="contact-graphic" style="border-radius: 4px; min-height: 320px; background-image: url('images/contact-graphic.png'); background-size: cover; background-position: center;"></div>
   </div>
 </section>
 
