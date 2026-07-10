@@ -411,6 +411,15 @@ h2.section-title {
   background-position: center;
 }
 
+@media (max-width: 860px) {
+  .welcome-photo {
+    background-size: contain !important;
+    background-color: #0c0c0c;
+    min-height: 240px !important;
+    aspect-ratio: 1536 / 1024;
+  }
+}
+
 .link-arrow {
   font-size: 14.5px;
   font-weight: 700;
