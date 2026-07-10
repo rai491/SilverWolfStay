@@ -237,6 +237,51 @@ img { max-width: 100%; display: block; }
 
 .gold { color: var(--gold); }
 
+/* ---------- Tagline ---------- */
+
+.tagline {
+  font-family: var(--font-serif);
+  font-style: italic;
+  font-weight: 600;
+  color: var(--gold);
+  letter-spacing: 0.02em;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 16px;
+  text-align: center;
+}
+
+.tagline::before,
+.tagline::after {
+  content: "";
+  height: 1px;
+  width: 34px;
+  background: var(--gold);
+  opacity: 0.55;
+}
+
+.hero-tagline {
+  font-size: clamp(16px, 1.8vw, 20px);
+  margin: 0 0 22px;
+  position: relative;
+}
+
+.page-hero .tagline {
+  font-size: 14.5px;
+  margin: 14px auto 0;
+}
+
+.footer-tagline {
+  font-size: 13.5px;
+  margin: 10px 0 18px;
+  justify-content: flex-start;
+  gap: 10px;
+}
+
+.footer-tagline::before,
+.footer-tagline::after { width: 18px; }
+
 /* ---------- Home hero ---------- */
 
 .hero {
