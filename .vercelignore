@@ -1,0 +1,11 @@
+# Source PNGs — kept in the repo as the originals for the WebP files that the
+# site actually serves, but excluded from the deploy so they don't ship.
+# Regenerate with: cwebp -q 82 -m 6 images/<name>.png -o images/<name>.webp
+images/about-brand.png
+images/contact-graphic.png
+images/hero-villa-pool.png
+images/kitchen.png
+images/living-room.png
+images/villa-alt.png
+images/welcome-graphic.png
+images/contact-living-room.jpg
