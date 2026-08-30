@@ -180,9 +180,16 @@
 
         <div class="form-row">
           <div class="form-field">
+            <label for="phone">Phone <span class="optional">(optional)</span></label>
+            <input type="tel" id="phone" name="phone" autocomplete="tel" inputmode="tel" placeholder="+1 555 000 0000">
+          </div>
+          <div class="form-field">
             <label for="location">Property location</label>
             <input type="text" id="location" name="property_location" placeholder="City, State/Province" required>
           </div>
+        </div>
+
+        <div class="form-row">
           <div class="form-field">
             <label for="count">Number of properties</label>
             <select id="count" name="property_count">
@@ -192,16 +199,15 @@
               <option value="10+">10 or more</option>
             </select>
           </div>
-        </div>
-
-        <div class="form-field">
-          <label for="service">What are you interested in?</label>
-          <select id="service" name="service_interest">
-            <option value="Full Co-Hosting &amp; Management">Full Co-Hosting &amp; Management</option>
-            <option value="Vacation Coverage">Vacation Coverage</option>
-            <option value="Listing Optimization">Listing Optimization</option>
-            <option value="Not sure yet">Not sure yet — help me choose</option>
-          </select>
+          <div class="form-field">
+            <label for="service">What are you interested in?</label>
+            <select id="service" name="service_interest">
+              <option value="Full Co-Hosting &amp; Management">Full Co-Hosting &amp; Management</option>
+              <option value="Vacation Coverage">Vacation Coverage</option>
+              <option value="Listing Optimization">Listing Optimization</option>
+              <option value="Not sure yet">Not sure yet — help me choose</option>
+            </select>
+          </div>
         </div>
 
         <div class="form-field">
@@ -210,7 +216,7 @@
         </div>
 
         <button type="submit" class="btn btn-gold btn-block" style="padding: 13px 26px;">Send Enquiry →</button>
-        <p class="form-note">We'll get back to you by email. We never share your details, and we'll tell you honestly if we're not the right fit.</p>
+        <p class="form-note">We'll get back to you by email, or by phone if you'd rather — just leave a number. We never share your details, and we'll tell you honestly if we're not the right fit.</p>
       </form>
     </div>
   </div>
