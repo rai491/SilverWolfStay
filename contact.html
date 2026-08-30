@@ -161,9 +161,15 @@
       <h2 style="font-family: var(--font-serif); font-size: 22px; margin: 0 0 10px; font-weight: 600;">Tell Us About Your Property</h2>
       <p style="font-size: 14px; color: var(--text-muted-4); margin: 0 0 28px; line-height: 1.5;">The more you share, the more useful our first reply will be.</p>
 
-      <!-- Posts to Formspree. js/main.js intercepts and submits via fetch so
-           the visitor stays on the page; without JS the plain POST still works. -->
+      <!-- Posts to Formspree. js/main.js intercepts, submits via fetch, and
+           sends the visitor to /thanks. Without JS the plain POST still works,
+           and _next tells Formspree to redirect to the same page. -->
       <form class="contact-form" id="contact-form" action="https://formspree.io/f/mkjnowaz" method="POST">
+        <input type="hidden" name="_next" value="https://wolfstays.com/thanks">
+        <input type="hidden" name="_subject" value="New enquiry from wolfstays.com">
+        <!-- Honeypot: hidden from people, tempting to bots. Formspree drops
+             any submission that fills it in. -->
+        <input type="text" name="_gotcha" tabindex="-1" autocomplete="off" aria-hidden="true" style="display:none">
         <div class="form-row">
           <div class="form-field">
             <label for="name">Your name</label>

@@ -21,10 +21,11 @@ function initContactForm() {
   const button = form.querySelector('button[type="submit"]');
   const buttonLabel = button ? button.textContent : '';
 
-  const show = (message, ok) => {
+  // Only errors render inline now — success navigates to /thanks.
+  const showError = (message) => {
     if (!status) return;
     status.textContent = message;
-    status.classList.toggle('is-error', !ok);
+    status.classList.add('is-error');
     status.hidden = false;
   };
 
@@ -46,16 +47,16 @@ function initContactForm() {
 
       if (response.ok) {
         form.reset();
-        show("Thanks — we've got your details and will be in touch shortly.", true);
+        window.location.assign('/thanks');
         return;
       }
 
       // Formspree returns field-level reasons on a 4xx; surface them when present.
       const data = await response.json().catch(() => null);
       const detail = data && data.errors ? data.errors.map((e) => e.message).join(', ') : '';
-      show(detail || 'Something went wrong. Please email hello@wolfstays.com instead.', false);
+      showError(detail || 'Something went wrong. Please email hello@wolfstays.com instead.');
     } catch {
-      show('Network error. Please check your connection, or email hello@wolfstays.com.', false);
+      showError('Network error. Please check your connection, or email hello@wolfstays.com.');
     } finally {
       if (button) {
         button.disabled = false;
