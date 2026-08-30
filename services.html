@@ -3,9 +3,32 @@
 <head>
 <meta charset="utf-8">
 <meta name="viewport" content="width=device-width, initial-scale=1">
-<title>Our Services — Silver Wolf Stays</title>
-<meta name="description" content="Silver Wolf Stays offers Full Property Management, Vacation Coverage, and Listing Optimization for vacation rental owners.">
+<title>Airbnb Co-Hosting Services &amp; Pricing Tiers — Silver Wolf Stays</title>
+<meta name="description" content="Three ways to work with us: full Airbnb co-hosting and short-term rental management, short-term vacation coverage, and one-time listing optimization. See what each includes.">
+<link rel="canonical" href="https://wolfstays.com/services">
+
+<link rel="icon" href="/favicon.ico" sizes="32x32">
+<link rel="icon" href="/images/logo-mark.png" type="image/png">
+<link rel="apple-touch-icon" href="/images/logo-mark.png">
+
+<meta property="og:type" content="website">
+<meta property="og:site_name" content="Silver Wolf Stays">
+<meta property="og:locale" content="en_US">
+<meta property="og:url" content="https://wolfstays.com/services">
+<meta property="og:title" content="Airbnb Co-Hosting Services &amp; Pricing Tiers — Silver Wolf Stays">
+<meta property="og:description" content="Full co-hosting, vacation coverage, or a one-time listing audit. See exactly what each service includes.">
+<meta property="og:image" content="https://wolfstays.com/images/og-cover.jpg">
+<meta property="og:image:width" content="1200">
+<meta property="og:image:height" content="630">
+<meta property="og:image:alt" content="Silver Wolf Stays — remote vacation rental property management">
+
+<meta name="twitter:card" content="summary_large_image">
+<meta name="twitter:title" content="Airbnb Co-Hosting Services &amp; Pricing Tiers — Silver Wolf Stays">
+<meta name="twitter:description" content="Full co-hosting, vacation coverage, or a one-time listing audit. See exactly what each service includes.">
+<meta name="twitter:image" content="https://wolfstays.com/images/og-cover.jpg">
+
 <link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
 <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@500;600;700&family=Manrope:wght@400;500;600;700;800&display=swap" rel="stylesheet">
 <link rel="stylesheet" href="css/style.css">
 <style>
@@ -13,38 +36,150 @@
   @media (max-width: 960px) {
     .services-grid { grid-template-columns: 1fr !important; }
   }
+  .service-detail { max-width: 820px; margin: 0 auto; }
+  .service-detail h3 {
+    font-family: var(--font-serif);
+    font-size: 20px;
+    font-weight: 600;
+    margin: 32px 0 12px;
+    color: var(--text-bright);
+  }
+  .service-detail p {
+    font-size: 14.5px;
+    line-height: 1.7;
+    color: var(--text-muted-2);
+    margin: 0 0 14px;
+  }
+  .service-detail .not-included {
+    font-size: 14px;
+    line-height: 1.65;
+    color: var(--text-dim-2);
+    border-left: 2px solid var(--border);
+    padding-left: 16px;
+    margin: 0 0 14px;
+  }
 </style>
+
+<script type="application/ld+json">
+{
+  "@context": "https://schema.org",
+  "@type": "ProfessionalService",
+  "@id": "https://wolfstays.com/#organization",
+  "name": "Silver Wolf Stays",
+  "alternateName": "Silver Wolf Stays Property Management",
+  "url": "https://wolfstays.com/",
+  "logo": {
+    "@type": "ImageObject",
+    "url": "https://wolfstays.com/images/logo-mark.png",
+    "width": 242,
+    "height": 285
+  },
+  "image": "https://wolfstays.com/images/hero-villa-pool.webp",
+  "description": "Remote Airbnb co-hosting and short-term rental management for vacation rental owners — guest communication, calendar management, cleaner coordination, and pricing.",
+  "slogan": "The Pack Behind Every Great Stay",
+  "telephone": "+1-978-381-0629",
+  "email": "hello@wolfstays.com",
+  "priceRange": "$$",
+  "areaServed": [
+    { "@type": "Country", "name": "United States" },
+    { "@type": "Country", "name": "Canada" }
+  ],
+  "serviceType": [
+    "Airbnb co-hosting",
+    "Short-term rental management",
+    "Vacation rental property management",
+    "Listing optimization"
+  ],
+  "contactPoint": {
+    "@type": "ContactPoint",
+    "telephone": "+1-978-381-0629",
+    "email": "hello@wolfstays.com",
+    "contactType": "sales",
+    "availableLanguage": "English"
+  }
+}
+</script>
+<script type="application/ld+json">
+{
+  "@context": "https://schema.org",
+  "@type": "WebSite",
+  "@id": "https://wolfstays.com/#website",
+  "url": "https://wolfstays.com/",
+  "name": "Silver Wolf Stays",
+  "publisher": { "@id": "https://wolfstays.com/#organization" },
+  "inLanguage": "en-US"
+}
+</script>
+<script type="application/ld+json">
+{
+  "@context": "https://schema.org",
+  "@type": "OfferCatalog",
+  "name": "Silver Wolf Stays Services",
+  "provider": { "@id": "https://wolfstays.com/#organization" },
+  "itemListElement": [
+    {
+      "@type": "Offer",
+      "itemOffered": {
+        "@type": "Service",
+        "name": "Full Co-Hosting & Property Management",
+        "description": "Ongoing Airbnb and VRBO co-hosting including guest communication, calendar management, cleaner and maintenance coordination, review management, and dynamic pricing.",
+        "provider": { "@id": "https://wolfstays.com/#organization" }
+      }
+    },
+    {
+      "@type": "Offer",
+      "itemOffered": {
+        "@type": "Service",
+        "name": "Vacation Coverage",
+        "description": "Reliable short-term co-hosting coverage for owners who are traveling or temporarily unavailable.",
+        "provider": { "@id": "https://wolfstays.com/#organization" }
+      }
+    },
+    {
+      "@type": "Offer",
+      "itemOffered": {
+        "@type": "Service",
+        "name": "Listing Optimization",
+        "description": "A one-time audit of your Airbnb or VRBO listing with actionable recommendations to improve presentation and performance.",
+        "provider": { "@id": "https://wolfstays.com/#organization" }
+      }
+    }
+  ]
+}
+</script>
 </head>
 <body>
 
 <header class="site-header">
-  <a href="index.html" class="brand">
+  <a href="/" class="brand">
     <img src="images/logo-mark.png" alt="Silver Wolf Stays" class="brand-logo">
     <span class="brand-name">SILVER WOLF STAYS</span>
   </a>
   <nav class="desktop-nav">
-    <a href="index.html">Home</a>
-    <a href="services.html" class="active">Our Services</a>
+    <a href="/">Home</a>
+    <a href="/services" class="active">Our Services</a>
     <a href="https://silverwolfstays.directstays.com/" target="_blank" rel="noopener">Our Properties</a>
-    <a href="list-your-property.html">List Your Property</a>
-    <a href="about.html">About Us</a>
-    <a href="contact.html">Contact</a>
+    <a href="/list-your-property">List Your Property</a>
+    <a href="/faq">FAQ</a>
+    <a href="/about">About Us</a>
+    <a href="/contact">Contact</a>
   </nav>
   <button class="mobile-toggle" aria-label="Toggle menu">☰</button>
 </header>
 <div class="mobile-nav">
-  <a href="index.html">Home</a>
-  <a href="services.html" class="active">Our Services</a>
+  <a href="/">Home</a>
+  <a href="/services" class="active">Our Services</a>
   <a href="https://silverwolfstays.directstays.com/" target="_blank" rel="noopener">Our Properties</a>
-  <a href="list-your-property.html">List Your Property</a>
-  <a href="about.html">About Us</a>
-  <a href="contact.html">Contact</a>
+  <a href="/list-your-property">List Your Property</a>
+  <a href="/faq">FAQ</a>
+  <a href="/about">About Us</a>
+  <a href="/contact">Contact</a>
 </div>
 
 <section class="page-hero narrow-md container">
   <div class="page-hero-icon">⚙</div>
-  <h1>Our <span class="gold">Services</span></h1>
-  <p>We help vacation rental owners save time, deliver exceptional guest experiences, and maximize their property's potential through personalized remote property management.</p>
+  <h1>Airbnb Co-Hosting &amp; Management <span class="gold">Services</span></h1>
+  <p>We help Airbnb, VRBO, and short-term rental owners save time, deliver exceptional guest experiences, and maximize their property's potential through personalized remote co-hosting. Choose ongoing management, short-term coverage, or a one-time listing audit.</p>
   <p class="tagline">The Pack Behind Every Great Stay</p>
 </section>
 
@@ -52,7 +187,7 @@
   <div class="grid-3 services-grid">
     <div class="card" style="padding: 40px 34px;">
       <div class="card-icon-circle-sm" style="width: 52px; height: 52px; font-size: 19px;">F</div>
-      <h2 style="font-family: var(--font-serif); font-size: 21px; font-weight: 600; margin: 0 0 10px; text-align: center;">Full Property Management</h2>
+      <h2 style="font-family: var(--font-serif); font-size: 21px; font-weight: 600; margin: 0 0 10px; text-align: center;">Full Co-Hosting &amp; Management</h2>
       <p style="font-size: 14px; color: var(--text-muted-3); text-align: center; margin: 0 0 24px; line-height: 1.55;">Perfect for owners looking for ongoing support.</p>
       <div class="checklist" style="margin-bottom: 26px;">
         <div><span class="mark" style="font-size:13px;">✓</span><span class="txt" style="font-size:13.5px;">Guest communication</span></div>
@@ -63,7 +198,7 @@
         <div><span class="mark" style="font-size:13px;">✓</span><span class="txt" style="font-size:13.5px;">Pricing recommendations</span></div>
         <div><span class="mark" style="font-size:13px;">✓</span><span class="txt" style="font-size:13.5px;">Listing optimization</span></div>
       </div>
-      <a href="contact.html" class="btn btn-gold btn-block">Get Started →</a>
+      <a href="/contact" class="btn btn-gold btn-block">Get Started →</a>
     </div>
 
     <div class="card" style="padding: 40px 34px;">
@@ -77,7 +212,7 @@
         <div><span class="mark" style="font-size:13px;">✓</span><span class="txt" style="font-size:13.5px;">Maintenance and emergency coordination</span></div>
         <div><span class="mark" style="font-size:13px;">✓</span><span class="txt" style="font-size:13.5px;">Seamless handoff back to your routine</span></div>
       </div>
-      <a href="contact.html" class="btn btn-gold btn-block">Get Coverage →</a>
+      <a href="/contact" class="btn btn-gold btn-block">Get Coverage →</a>
     </div>
 
     <div class="card" style="padding: 40px 34px;">
@@ -91,8 +226,37 @@
         <div><span class="mark" style="font-size:13px;">✓</span><span class="txt" style="font-size:13.5px;">Guidance on improving guest reviews</span></div>
         <div><span class="mark" style="font-size:13px;">✓</span><span class="txt" style="font-size:13.5px;">No ongoing commitment required</span></div>
       </div>
-      <a href="contact.html" class="btn btn-gold btn-block">Request an Audit →</a>
+      <a href="/contact" class="btn btn-gold btn-block">Request an Audit →</a>
     </div>
+  </div>
+</section>
+
+<section class="section-tight container">
+  <div class="service-detail">
+    <h2 class="section-title" style="margin-bottom: 10px;">What Each Service <span class="gold">Actually Includes</span></h2>
+
+    <h3>Full Co-Hosting &amp; Property Management</h3>
+    <p>This is our ongoing partnership tier, designed for owners who want their short-term rental to run without their daily involvement. We act as your co-host on Airbnb, VRBO, or whichever platforms you list on — which means we operate inside your existing accounts rather than moving your listing somewhere new. You keep ownership of the listing, the reviews, and the payouts.</p>
+    <p>Day to day, we handle guest communication from the first inquiry through post-checkout follow-up: answering questions, sending check-in instructions, resolving issues mid-stay, and requesting reviews afterward. We manage your calendar and booking settings, coordinate your cleaners between stays, and dispatch maintenance when something breaks. We monitor your pricing against local demand and seasonality, and recommend adjustments — you approve them.</p>
+    <p>We also keep the listing itself healthy: refreshing the description, reordering photos, updating amenities, and watching the metrics that affect your placement in Airbnb search results and your standing toward Superhost status.</p>
+    <p class="not-included"><strong>What this does not include:</strong> we do not perform cleaning or maintenance ourselves — we coordinate the vendors who do, and you can keep the ones you already use. We do not hold your payouts; Airbnb and VRBO pay you directly. We do not handle licensing, permits, tax filing, or insurance claims, though we will flag anything we notice.</p>
+
+    <h3>Vacation Coverage</h3>
+    <p>Vacation Coverage is short-term co-hosting for owners who normally self-manage but need to step away — a trip, a busy season at work, a family situation, or simply a stretch where you cannot be responsive to guests. Rather than pausing your calendar and losing the bookings, you hand the operational side to us for a defined window.</p>
+    <p>During coverage we take over guest messaging, monitor incoming bookings and calendar conflicts, coordinate turnovers with your existing cleaners, and handle maintenance or emergency situations as they come up. We work from your established house rules, check-in process, and vendor list, so guests experience the same stay they would have with you.</p>
+    <p>When your coverage window ends, we hand everything back with a summary of what happened while you were away — bookings taken, issues resolved, anything that needs your attention. There is no ongoing commitment; owners often use this seasonally and return to self-managing in between.</p>
+    <p class="not-included"><strong>What this does not include:</strong> long-term pricing strategy or listing optimization work, which belong to the full co-hosting tier. Coverage is about keeping your rental running smoothly and your guests well cared for during a specific period.</p>
+
+    <h3>Listing Optimization</h3>
+    <p>Listing Optimization is a one-time audit for owners who want to keep managing their own property but suspect their listing is underperforming. If your views are low, your conversion is weak, or your bookings have plateaued while comparable properties nearby stay full, this is the diagnostic.</p>
+    <p>We review the listing the way a prospective guest sees it: the cover photo and image sequence, the title and description, your amenity selections, your house rules, your cancellation and minimum-stay settings, and your pricing relative to genuinely comparable listings in your market. We also read through your recent reviews for recurring themes that may be quietly costing you bookings.</p>
+    <p>You receive a written report with prioritized, specific recommendations — not general advice, but the changes we would make to your listing and why, ordered by expected impact. You implement them yourself, or you can bring us on for full co-hosting afterward if you would rather not.</p>
+    <p class="not-included"><strong>What this does not include:</strong> we do not implement the changes for you under this service, and it does not include professional photography — though the report will tell you honestly if your photos are the bottleneck.</p>
+
+    <h3>How Onboarding Works</h3>
+    <p>Every engagement starts with a conversation rather than a contract. You tell us about the property, where it is listed, how it currently performs, and what is taking up your time. We tell you which tier fits, what it would cost, and what we would prioritize first. If it is not a fit, we will say so.</p>
+    <p>If you move forward, we walk through your property details, house rules, vendor contacts, and access instructions, then get added as a co-host on your listing platforms. We review the listing before taking over guest communication so that we are not learning your property in front of a guest.</p>
+    <p>Pricing depends on the property, the platforms it is listed on, and the level of support you need, so we quote after that first conversation rather than publishing a flat rate that would be wrong for most owners. Terms are month to month for ongoing co-hosting — we would rather earn the next month than lock you into a year.</p>
   </div>
 </section>
 
@@ -101,7 +265,7 @@
   <div class="grid-3" style="grid-template-columns: repeat(4, 1fr);">
     <div class="card">
       <div class="card-icon-circle-sm">♥</div>
-      <h3>Personalized Management</h3>
+      <h3>Personalized Co-Hosting</h3>
       <p>Every property receives hands-on attention.</p>
     </div>
     <div class="card">
@@ -124,13 +288,13 @@
 
 <section class="section-tight" style="max-width: 1000px; margin: 0 auto;">
   <div class="panel" style="position: relative; overflow: hidden; padding: 60px 40px; text-align: center;">
-    <div style="position: absolute; inset: 0; background-image: url('images/kitchen.png'); background-size: cover; background-position: center;"></div>
+    <img src="images/kitchen.webp" alt="" role="presentation" class="bg-img" width="1536" height="1024" loading="lazy">
     <div style="position: absolute; inset: 0; background: linear-gradient(180deg, oklch(0.08 0.005 50 / 0.55), oklch(0.08 0.005 50 / 0.88));"></div>
     <div style="position: relative;">
       <div class="cta-icon">✉</div>
       <h2 style="font-family: var(--font-serif); font-size: clamp(24px, 3vw, 32px); margin: 0 0 14px; font-weight: 600; color: var(--text-bright);">Ready to <span class="gold">Partner With Us?</span></h2>
-      <p style="font-size: 15px; color: var(--text-3); max-width: 520px; margin: 0 auto 28px; line-height: 1.6;">Let's discuss the right level of support for your vacation rental.</p>
-      <a href="contact.html" class="btn btn-gold" style="padding: 14px 32px;">Get in Touch</a>
+      <p style="font-size: 15px; color: var(--text-3); max-width: 520px; margin: 0 auto 28px; line-height: 1.6;">Let's discuss the right level of support for your Airbnb or short-term rental.</p>
+      <a href="/contact" class="btn btn-gold" style="padding: 14px 32px;">Get in Touch</a>
     </div>
   </div>
 </section>
@@ -143,35 +307,36 @@
         <span class="footer-brand-name">SILVER WOLF STAYS</span>
       </div>
       <p class="tagline footer-tagline">The Pack Behind Every Great Stay</p>
-      <p>Hands-on remote property management for vacation rentals. We help owners save time and deliver exceptional guest experiences.</p>
+      <p>Remote Airbnb co-hosting and short-term rental management for vacation rental owners across the US and Canada.</p>
     </div>
     <div>
       <div class="footer-heading">Quick Links</div>
       <div class="footer-links">
-        <a href="index.html">Home</a>
-        <a href="services.html">Our Services</a>
+        <a href="/">Home</a>
+        <a href="/services">Our Services</a>
         <a href="https://silverwolfstays.directstays.com/" target="_blank" rel="noopener">Our Properties</a>
-        <a href="list-your-property.html">List Your Property</a>
-        <a href="about.html">About Us</a>
-        <a href="contact.html">Contact Us</a>
+        <a href="/list-your-property">List Your Property</a>
+        <a href="/faq">FAQ</a>
+        <a href="/about">About Us</a>
+        <a href="/contact">Contact Us</a>
       </div>
     </div>
     <div>
       <div class="footer-heading">Contact Us</div>
       <div class="footer-contact">
-        <div>☎ +1 978 381 0629</div>
-        <div>✉ hello@wolfstays.com</div>
+        <div>☎ <a href="tel:+19783810629">+1 978 381 0629</a></div>
+        <div>✉ <a href="mailto:hello@wolfstays.com">hello@wolfstays.com</a></div>
       </div>
     </div>
     <div>
       <div class="footer-heading">Ready to Get Started?</div>
       <p>Reach out today for a free consultation on your property.</p>
-      <a href="contact.html" class="btn btn-gold" style="padding: 10px 18px; font-size: 13.5px;">Contact Us</a>
+      <a href="/contact" class="btn btn-gold" style="padding: 10px 18px; font-size: 13.5px;">Contact Us</a>
     </div>
   </div>
   <div class="footer-bottom">
     <span>© 2026 Silver Wolf Stays. All rights reserved.</span>
-    <span>Hands-on remote property management for vacation rental owners.</span>
+    <span>Remote Airbnb co-hosting and short-term rental management for vacation rental owners.</span>
   </div>
 </footer>
 
