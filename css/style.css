@@ -707,6 +707,7 @@ h2.section-title {
 .form-field textarea {
   font-family: inherit;
   font-size: 14px;
+  line-height: 1.4;
   color: var(--text-bright);
   background: var(--bg-card-alt);
   border: 1px solid var(--border);
@@ -716,6 +717,25 @@ h2.section-title {
 }
 
 .form-field textarea { resize: vertical; min-height: 118px; }
+
+/* Selects default to native OS chrome, which ignores the colors above.
+   Strip it, then draw our own arrow in the padding we reserve on the right. */
+.form-field select {
+  appearance: none;
+  -webkit-appearance: none;
+  padding-right: 38px;
+  background-image: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='12' height='8' viewBox='0 0 12 8'%3E%3Cpath d='M1 1.5 6 6.5l5-5' fill='none' stroke='%23ddb049' stroke-width='1.6' stroke-linecap='round' stroke-linejoin='round'/%3E%3C/svg%3E");
+  background-repeat: no-repeat;
+  background-position: right 14px center;
+  cursor: pointer;
+}
+
+/* The dropdown list itself is OS-rendered — set both so the open menu
+   is readable rather than white-on-white in dark mode. */
+.form-field select option {
+  background: var(--bg-card-alt);
+  color: var(--text-bright);
+}
 
 .form-field input:focus,
 .form-field select:focus,
